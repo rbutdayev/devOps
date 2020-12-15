@@ -48,8 +48,8 @@ Open .bashrc file
 Add following content into .bashrc, you can choose any arbitary name for cluster and make sure buck name matches the one you created in previous step.
 
 ```sh
-export KOPS_CLUSTER_NAME=simplilearn.in
-export KOPS_STATE_STORE=s3://simplilearn.in.k8s
+export KOPS_CLUSTER_NAME=[private dns name]
+export KOPS_STATE_STORE=s3://bucket-name
 ```
 Then running command to reflect variables added to .bashrc
 ```
@@ -59,7 +59,7 @@ Then running command to reflect variables added to .bashrc
 This keypair is used for ssh into kubernetes cluster
 
 ```sh
-ssh-keygen
+ssh-keygen. # enter-enter
 ```
 
 ### 9. Create a Kubernetes cluster definition.
@@ -89,7 +89,7 @@ For the above above command, you might see validation failed error initially whe
 
 ### 11. To connect to the master
 ```sh
-ssh admin@api.simplilearn.in
+ssh admin@api.private.domain
 ```
 # Destroy the kubernetes cluster
 ```sh
