@@ -1,3 +1,3 @@
-# K8s - Kubernetes Course by Denis Astahov
+# Some kubernetes lessons 
 
 * Related files and Source Code for Kubernetes Course
